@@ -1,0 +1,477 @@
+* {
+  box-shadow: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    margin:0px;
+    margin-top:60px;
+    padding: 0px;
+  }
+  
+  nav {
+      display: flex;
+      position: fixed;
+      z-index: 3;
+      top:0;
+      width: 100%;
+      height: 5%;
+      background-color: #434053;
+      overflow: auto;
+      height: 76px;
+  }
+  
+  .left-links{
+      flex:1 1 200px;
+   }
+  
+  .links {
+      display: inline-block;
+      text-align: center;
+      padding: 25px;
+      margin-left: 3px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Montserrat';
+   }
+  
+   .topnav-centered img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   
+  #logo {
+    width: 54px;
+    height: 62px;
+  }
+  
+  .links:hover {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+  }
+  .selected{
+    border-bottom: 2px solid white;
+  }
+  
+  body, html {
+    height: 100%;
+    margin-top: 2%;
+  }
+  
+  /* The hero image */
+  .hero-image {
+  background-image: linear-gradient(rgba(12.5%, 12.2%, 15.3%, 0.35), rgba(12.5, 12.2, 15.3, 0.35)), url(../images/Headshot_black\ and\ white.png);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+  text-align: left;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  left: 15%;
+  transform: translate(0%, 0%);
+  text-decoration: none;
+  font-family: 'Montserrat';
+  }
+  
+  h1 {
+    font-size: 48px;
+    width: 50%;
+    color: white;
+    padding-bottom: 2.5%;
+  }
+
+  .bio {
+    font-size: 24px;
+    color: white;
+    width: 47.5%;
+    padding-bottom: 1%;
+  }
+  
+  .linkToMore {
+    font-size: 14px;
+    color: #3EE294;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 56%;
+  }
+  
+  .footer {
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: #32303B;
+    padding: 0;
+    margin-bottom: 5%;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat'
+  }
+  
+  .linkedInIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/linkedin\ logo.png);
+    height: 48px;
+    width: 48px;
+    margin-bottom: 3.5%;
+  }
+  
+  .name {
+    margin-bottom: 15%;
+  }
+  
+  .email {
+    margin-bottom: 3.5%;
+  }
+
+  .bounce {
+      width: 50px;
+      text-align: left;
+      position: fixed;
+      z-index: 1;
+      top: 93%;
+      left: 50%;
+      transform: translate(0%, 0%);
+    /* Add the animation bounceArrow here */
+    animation: bounceArrow .7s infinite
+   
+  }
+
+  @keyframes bounceArrow {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 7px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }
+
+  .mySkills {
+    background-color: #32303B;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    z-index: 2; 
+  }
+
+  .flexContainer {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    max-height: 466px;*/
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /*max-height: 466px;*/
+    min-height: 466px;
+    justify-content: center;
+  }
+
+  .flex-item-left {
+    flex: 33%
+  }
+
+  .flex-item-center {
+    flex: 50%
+  }
+
+  .flex-item-right {
+    flex: 33%
+  }
+
+  #container {
+    background-color: #434053;
+    width: 17.5%;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 32px;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    color: white;
+    font-size: 18px;
+    align-content: center;
+    text-align: center;
+  }
+  
+  /*.flexContainer > div {
+    background-color: #434053;
+    width: 17.5%;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 32px;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    color: white;
+    font-size: 18px;
+    align-content: center;
+  }*/
+  
+  #iA {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 24px;
+    margin: 0;
+    font-size: 24px;
+    color: #3FCE8C;
+    font-weight: bold;
+    font-family: 'Montserrat';
+  }
+  
+  #proto, #problems {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 24px;
+    margin: 0;
+    font-size: 24px;
+    color: #3FCE8C;
+    font-weight: bold;
+    font-family: 'Montserrat';
+  }  
+  
+  .myStrengths {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #32303B;
+    margin: 0 auto;
+    padding-top: 56px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+  }
+
+  .dashedBox {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    width: 75%;
+    height: 70px;
+    background-color: #32303B;
+    
+  }
+
+  .myWork {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: #32303b;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  .myWork div {
+    padding: 75px;
+  }
+
+  .work {
+      width: 100%;
+      height: auto;
+      background-color: #32303b;
+      position: relative;
+      z-index: 2; 
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      padding: 1% 0 10% 0; 
+  }
+  
+  .caseStudies {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "setAwayCard kooktCard"
+    "usdaCard bensBellsCard"
+    ;
+    grid-gap: 20px 20px;
+    margin: 16.5%;
+    margin-bottom: 0;
+    margin-top: 2.5%;
+    justify-content: center;
+
+  }
+
+  .casestudies > div {
+    max-width: 453px;
+    padding: 20px;
+  }
+
+  .setAwayHeader, .kooktHeader, .usdaHeader, .bensBellsHeader {
+    text-align: center;
+    margin: 3%
+  }
+  
+  .setAwayText, .kooktText, .usdaText, .bensBellsText {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 16px;
+  }
+
+  #image {
+    width: 100%;
+  }
+
+  .setAwayCard {
+      grid-area: setAwayCard;  
+      width: 100%;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.50);
+      background-color: #8C8BCF;
+      color: white;
+      font-size: 18px;
+  }
+
+  .setAwayHeader {
+    font-family: 'Montserrat';  
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+
+  .kooktCard {
+    grid-area: kooktCard;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.50);
+    background-color: #CF7D34;
+    color: white;
+    font-size: 18px;
+}
+
+.kooktHeader {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+  .card__linkWhite {
+    font-family: 'Montserrat';  
+    color: white;
+    text-align: right;
+    padding: 16px;
+    text-decoration: none;
+    align-content: flex-end;
+  }
+
+  .card__linkWhite:hover {
+      text-decoration: underline;
+      font-weight: bold;
+  }
+
+  .card__linkBlack {
+    font-family: 'Montserrat';
+    color: black;
+    text-align: right;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.card__linkBlack:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+  .usdaCard {
+    grid-area: usdaCard;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.50);
+    background-color: #8CC2FA;
+    color: black;
+    font-size: 18px;
+}
+
+.usdaHeader {
+  font-family: 'azo sans';  
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.bensBellsCard {
+  grid-area: bensBellsCard;  
+  width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.50);
+  background-color: #AECECE;
+  color: black;
+  font-size: 18px;
+}
+
+.bensBellsHeader {
+  font-family: 'Lato';  
+  font-size: 37px;
+  color: black;
+  font-weight: bold;
+
+}
+
+@media screen and (max-width: 600px) {
+  .caseStudies {
+    /*grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "setAwayCard"
+      "kooktCard"
+      "usdaCard"
+      "bensBellsCard"
+    ; */
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  /*.flexContainer {
+    flex-direction: column;    
+    background-color: chartreuse;
+  }*/
+
+  .flexContainer {
+    height: auto;
+  }
+
+  .flex-item-left .flex-item-center .flex-item-right {
+    flex: 100%
+    
+  }
+
+  #container {
+    width: 100%;
+  }
+  
+
+}
+
+
