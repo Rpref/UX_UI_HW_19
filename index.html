@@ -29,7 +29,16 @@
             <div class="hero-text">
               <h1>Hi! I'm Reagan Prefling.</h1>
               <p class="bio">A UX/UI Designer with a background in fashion design, sustainability, and a knack for information architecture.</p>
-              <p class="linkToMore">Read my blurb...</p>
+              <button id="linkToMore" class="button">Read my blurb...</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p class="p1">I spent 10 years as a designer and product developer for Tory Burch. More recently, I have worked for small startups developing garments, data management systems, and operations.</p> 
+                    <p class="p2">Sustainable design is rooted in my long history of organizing information in a way that “makes sense”, and was brought to life in practice while developing 100% circular garments over the past three years. I have delighted both customers and stakeholders by creating products with lasting power, and systems that increase clarity and efficiency across functions.</p>
+                    <p class="p3">As I strive to create positive impacts on the world, I wish to lend my expertise to purposeful companies by creating engaging experiences, improving internal systems, and beyond.</p>    
+                    <!--<p class="closeBlurb">Close blurb</p>-->    
+                </div>
             </div>
             <div class="arrow">
                 <img class="bounce" src="images/downArrow.png">
@@ -61,7 +70,7 @@
 
 <section class="work">    
     <div class="caseStudies">
-        <div class="setAwayCard">
+        <div class="setAwayCard zoom">
             <img id="image" src="../UX_UI_HW_18/images/Set Away Image (1).png">
             <div class="setAwayHeader">Set Away</div>
             <div class="setAwayText">Designing an app that makes planning group travel a breeze, with survey options, curated lists of rentals, and more.</div>
@@ -70,7 +79,7 @@
             </div>
         </div> 
             
-        <div class="kooktCard">
+        <div class="kooktCard zoom">
             <img id="image" src="../UX_UI_HW_18/images/KookT Image.png">
             <div class="kooktHeader">KookT</div>
             <div class="kooktText">Designing an app that tells you what to cook based off of what is already in your fridge. Customize ingredient amounts, serving sizes, and more.</div>
@@ -79,7 +88,7 @@
             </div>
         </div>        
 
-        <div class="usdaCard">
+        <div class="usdaCard zoom">
             <img id="image" src="../UX_UI_HW_18/images/USDA_Primary Image (1).png">
             <div class="usdaHeader">USDA</div>
             <div class="usdaText">Reorganizing the layout and information architecture of the United States Department of Agriculture website.</div>
@@ -88,7 +97,7 @@
             </div>
         </div>        
 
-        <div class="bensBellsCard">
+        <div class="bensBellsCard zoom">
             <img id="image" src="../UX_UI_HW_18/images/Ben's Bells_Primary Image (1).png">
             <div class="bensBellsHeader">Ben's Bells</div>
             <div class="bensBellsText">Evaluating the website of the nonprofit, Ben’s Bells, and bringing more engagement to the organization.</div>
@@ -109,4 +118,8 @@
         <p class="name">Reagan Prefling | All Rights Reserved 2021</p>
     </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/index.js"></script>
+    
 </html>

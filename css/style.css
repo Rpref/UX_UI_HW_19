@@ -101,12 +101,81 @@ body{
     padding-bottom: 1%;
   }
   
-  .linkToMore {
+  .button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 2.5%;
+  }
+
+  #linkToMore {
     font-size: 14px;
     color: #3EE294;
     font-weight: bold;
     text-align: right;
     margin-right: 56%;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    /*overflow: auto; /* Enable scroll if needed */
+    /*background-color: #27242e; /* Fallback color */
+    background-color: #434053;
+    color: white;
+    margin-top: 18.5%;
+    /*margin-left: 14.5%*/
+
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #434053;
+    margin: 0 auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: none;
+    width: 70%; /* Could be more or less, depending on screen size */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+  }
+
+  .p1 {
+    margin-top: 5%;
+    line-height: 1.75;
+  }
+
+  .p2 {
+    margin-top: 2.5%;
+    line-height: 1.75;
+  }
+
+  .p3 {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    line-height: 1.75;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #3EE294;
+    float: right;
+    font-size: 28px;
+    font-weight: regular;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #3EE294;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
   }
   
   .footer {
@@ -117,6 +186,7 @@ body{
     background-color: #32303B;
     padding: 0;
     margin-bottom: 5%;
+    min-height: 350px;
     background-position: center;
     color: white;
     text-decoration: none;
@@ -139,7 +209,7 @@ body{
   }
   
   .email {
-    margin-bottom: 3.5%;
+    margin-bottom: 3%;
   }
 
   .bounce {
@@ -318,7 +388,7 @@ body{
     "setAwayCard kooktCard"
     "usdaCard bensBellsCard"
     ;
-    grid-gap: 20px 20px;
+    grid-gap: 25px 25px;
     margin: 16.5%;
     margin-bottom: 0;
     margin-top: 2.5%;
@@ -327,7 +397,7 @@ body{
   }
 
   .casestudies > div {
-    max-width: 453px;
+    max-width: 350px;
     padding: 20px;
   }
 
@@ -435,6 +505,22 @@ body{
   color: black;
   font-weight: bold;
 
+}
+
+/*.zoom {
+  width: 350px;
+  height: 200px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+}*/
+
+.transition {
+  -webkit-transform: scale(1.03); 
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 @media screen and (max-width: 600px) {
