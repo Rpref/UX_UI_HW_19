@@ -67,7 +67,9 @@ body{
   .hero-image {
   background-image: linear-gradient(rgba(12.5%, 12.2%, 15.3%, 0.35), rgba(12.5, 12.2, 15.3, 0.35)), url(../images/Headshot_black\ and\ white.png);
   height: 100%;
+  /*width: 100%;*/
   width: 100%;
+  /*width: calc(100vh);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,52 +103,92 @@ body{
     padding-bottom: 1%;
   }
   
-  .button {
+  /*.button {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     margin-top: 2.5%;
+  }*/
+
+  .accordion {
+    background-color: transparent;
+    color: #3FCE8C;
+    cursor: pointer;
+    padding: 16px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    max-height: 800px;
   }
 
-  #linkToMore {
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #434053;
+    color: white;
+    max-height: 0;
+    max-width: 800px;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+    line-height: 1.75;
+    justify-content: space-between;
+    
+  }
+
+  .p1 .p2 .p3 {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+ /* #linkToMore {
     font-size: 14px;
     color: #3EE294;
     font-weight: bold;
     text-align: right;
     margin-right: 56%;
-  }
+  }*/
 
-  .modal {
+  /*.modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
+    /*position: fixed; /* Stay in place */
+    /*z-index: 1; /* Sit on top */
+   /* left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: auto; /* Full height */
+   /* height: auto; /* Full height */
     /*overflow: auto; /* Enable scroll if needed */
     /*background-color: #27242e; /* Fallback color */
-    background-color: #434053;
+   /* background-color: #434053;
     color: white;
     margin-top: 18.5%;
-    /*margin-left: 14.5%*/
+    /*margin-left: 14.5%
 
-  }
+  }*/
   
   /* Modal Content/Box */
-  .modal-content {
+  /*.modal-content {
     background-color: #434053;
     margin: 0 auto; /* 15% from the top and centered */
-    padding: 10px;
+   /* padding: 10px;
     border: none;
     width: 70%; /* Could be more or less, depending on screen size */
-    font-family: 'Montserrat', sans-serif;
+   /* font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-  }
+  }*/
 
-  .p1 {
+  /*.p1 {
     margin-top: 5%;
     line-height: 1.75;
   }
@@ -160,7 +202,7 @@ body{
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     line-height: 1.75;
-  }
+  }*/
   
   /* The Close Button */
   .close {
@@ -399,6 +441,8 @@ body{
   .casestudies > div {
     max-width: 350px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .setAwayHeader, .kooktHeader, .usdaHeader, .bensBellsHeader {
@@ -443,36 +487,56 @@ body{
 }
 
 .kooktHeader {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 48px;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;*/
+    font-family: 'Montserrat';
     font-weight: bold;
+    font-size: 36px;
 }
 
-  .card__linkWhite {
+.button .btn {
+  background-color: #434053;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  margin-left: 32%;
+  margin-right: 30%;
+  margin-bottom: 24px;
+}
+ /* .card__linkWhite {
     font-family: 'Montserrat';  
     color: white;
     text-align: right;
     padding: 16px;
     text-decoration: none;
     align-content: flex-end;
-  }
+  }*/
 
   .card__linkWhite:hover {
-      text-decoration: underline;
+      /*text-decoration: underline;*/
       font-weight: bold;
+      color: #3FCE8C;
   }
 
-  .card__linkBlack {
+  /*.card__linkBlack {
     font-family: 'Montserrat';
-    color: black;
+    color: white;
     text-align: right;
     padding: 16px;
     text-decoration: none;
-}
+}*/
 
 .card__linkBlack:hover {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   font-weight: bold;
+  color: #3FCE8C;
 }
   .usdaCard {
     grid-area: usdaCard;
@@ -484,7 +548,8 @@ body{
 }
 
 .usdaHeader {
-  font-family: 'azo sans';  
+  /*font-family: 'azo sans';*/
+  font-family: 'Montserrat';  
   color: black;
   font-size: 36px;
   font-weight: bold;
@@ -500,8 +565,9 @@ body{
 }
 
 .bensBellsHeader {
-  font-family: 'Lato';  
-  font-size: 37px;
+  /*font-family: 'Lato'; */
+  font-family: 'Montserrat'; 
+  font-size: 36px;
   color: black;
   font-weight: bold;
 

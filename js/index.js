@@ -24,7 +24,7 @@ $(".button").hover(function(){
 });
 
 // Get the modal
-var modal = document.getElementById("myModal");
+/*var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("linkToMore");
@@ -47,7 +47,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+}*/
 
 $(document).ready(function(){
     $('.zoom').hover(function() {
@@ -56,3 +56,18 @@ $(document).ready(function(){
         $(this).removeClass('transition');
     });
 });
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
