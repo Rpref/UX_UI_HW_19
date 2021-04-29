@@ -18,7 +18,7 @@ console.log("Your index.js file is loaded correctly!");
     );*/
 
 $(".button").hover(function(){
-    $(this).css("font-size", "24px");
+    $(this).css("font-size", "18px");
     }, function(){
     $(this).css("font-size", "14px");
 });
