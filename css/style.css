@@ -115,10 +115,13 @@ body{
   .accordion {
     background-color: transparent;
     color: #3FCE8C;
+    font-size: 16px;
+    font-family: 'Montserrat';
     cursor: pointer;
     padding: 16px 0;
-    width: 100%;
-    text-align: left;
+    width: 686px;
+    height: 50px;
+    text-align: center;
     border: none;
     outline: none;
     transition: 0.4s;
@@ -126,10 +129,9 @@ body{
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: transparent;
+    background-color: #434053;
     font-weight: bold;
-    font-size: 16px;
-    max-height: 800px;
+    /*font-size: 16px;*/
   }
 
 
@@ -139,12 +141,11 @@ body{
     background-color: #434053;
     color: white;
     max-height: 0;
-    max-width: 800px;
+    width: 650px;
     overflow: auto;
     transition: max-height 0.2s ease-out;
     line-height: 1.75;
     justify-content: space-between;
-    
   }
 
   .p1 .p2 .p3 {
