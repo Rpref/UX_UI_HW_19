@@ -148,9 +148,9 @@ body{
     justify-content: space-between;
   }
 
-  .p1 .p2 .p3 {
-    margin-top: 3em;
-    margin-bottom: 3em;
+  .panel-text {
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 
  /* #linkToMore {
